@@ -3,7 +3,7 @@
 <head>
     <title>Portfolio อธิชา</title>
 </head>
-<body bgcolor="#CC6600">
+<body bgcolor="#BEBEBE">
 <h1>หน้าหลัก</h1>
 <a href="personal.html">ประวัติส่วนตัว</a>
 </body>
@@ -11,98 +11,283 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | หน้าหลัก</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | หน้าแรก</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Kanit',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* Navbar */
+
+nav{
+    background:#1e3a8a;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    position:sticky;
+    top:0;
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd54f;
+}
+
+/* Hero */
+
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:85vh;
+    gap:70px;
+    padding:50px;
+}
+
+.hero img{
+    width:280px;
+    height:280px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid #1e3a8a;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.hero-text h1{
+    font-size:48px;
+    color:#1e3a8a;
+}
+
+.hero-text h2{
+    margin:10px 0;
+    color:#444;
+    font-weight:400;
+}
+
+.hero-text p{
+    margin:20px 0;
+    line-height:1.8;
+    max-width:550px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 28px;
+    background:#1e3a8a;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#274fc7;
+}
+
+/* Cards */
+
+.menu-section{
+    padding:60px;
+}
+
+.menu-section h2{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#1e3a8a;
+    margin-bottom:15px;
+}
+
+.card p{
+    margin-bottom:20px;
+}
+
+.card a{
+    text-decoration:none;
+    color:white;
+    background:#1e3a8a;
+    padding:10px 18px;
+    border-radius:6px;
+}
+
+/* Footer */
+
+footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+}
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<header>
-    <div class="logo">
-        <h2>My Portfolio</h2>
-    </div>
+<nav>
 
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">หน้าหลัก</a></li>
-            <li><a href="education.html">การศึกษา</a></li>
-            <li><a href="personal.html">ประวัติส่วนตัว</a></li>
-            <li><a href="activities.html">ผลงาน</a></li>
-            <li><a href="contact.html">ติดต่อ</a></li>
-        </ul>
-    </nav>
-</header>
+<h2>My Portfolio</h2>
+
+<ul>
+
+<li><a href="index.html">หน้าหลัก</a></li>
+
+<li><a href="education.html">การศึกษา</a></li>
+
+<li><a href="personal.html">ประวัติส่วนตัว</a></li>
+
+<li><a href="activities.html">ผลงาน</a></li>
+
+<li><a href="contact.html">ติดต่อ</a></li>
+
+</ul>
+
+</nav>
 
 <section class="hero">
 
-    <div class="hero-text">
+<img src="images/profile.jpg" alt="Profile">
 
-        <h1>สวัสดีค่ะ 👋</h1>
+<div class="hero-text">
 
-        <h2>ฉันชื่่อ <span>นางสาวอธชา ไพภักดี</span></h2>
+<h1>สวัสดีครับ</h1>
 
-        <p>
-            ยินดีต้อนรับสู่เว็บไซต์ Portfolio
-            เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมข้อมูลส่วนตัว
-            ประวัติการศึกษา ผลงาน กิจกรรม และช่องทางการติดต่อ
-            เพื่อใช้ประกอบการสมัครเข้าศึกษาต่อในระดับอุดมศึกษา
-        </p>
+<h2>ผมชื่อ [ชื่อ-นามสกุล]</h2>
 
-        <a href="personal.html" class="btn">
-            รู้จักฉันเพิ่มเติม
-        </a>
+<p>
 
-    </div>
+ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของผม
+เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมประวัติส่วนตัว
+ประวัติการศึกษา ผลงาน กิจกรรม และช่องทางการติดต่อ
+เพื่อใช้ประกอบการศึกษาต่อในระดับอุดมศึกษา
 
-    <div class="hero-image">
+</p>
 
-        <img src="images/profile.jpg" alt="Profile">
+<a href="personal.html" class="btn">รู้จักฉันเพิ่มเติม</a>
 
-    </div>
+</div>
 
 </section>
 
-<section class="about">
+<section class="menu-section">
 
-    <h2>เกี่ยวกับเว็บไซต์</h2>
+<h2>เมนูภายในเว็บไซต์</h2>
 
-    <div class="cards">
+<div class="cards">
 
-        <div class="card">
-            <h3>📚 การศึกษา</h3>
-            <p>ประวัติการศึกษาและผลการเรียน</p>
-        </div>
+<div class="card">
+<h3>ประวัติการศึกษา</h3>
+<p>โรงเรียน ผลการเรียน และข้อมูลด้านการศึกษา</p>
+<a href="education.html">เข้าสู่หน้า</a>
+</div>
 
-        <div class="card">
-            <h3>👤 ประวัติส่วนตัว</h3>
-            <p>ข้อมูลส่วนตัว ความสามารถ และความสนใจ</p>
-        </div>
+<div class="card">
+<h3>ประวัติส่วนตัว</h3>
+<p>ข้อมูลส่วนตัว ความสามารถ และความสนใจ</p>
+<a href="personal.html">เข้าสู่หน้า</a>
+</div>
 
-        <div class="card">
-            <h3>🏆 ผลงาน</h3>
-            <p>กิจกรรม เกียรติบัตร และผลงานที่ผ่านมา</p>
-        </div>
+<div class="card">
+<h3>ผลงานและกิจกรรม</h3>
+<p>รวบรวมเกียรติบัตร ผลงาน และกิจกรรมต่าง ๆ</p>
+<a href="activities.html">เข้าสู่หน้า</a>
+</div>
 
-        <div class="card">
-            <h3>📞 ติดต่อ</h3>
-            <p>ช่องทางการติดต่อและ Social Media</p>
-        </div>
+<div class="card">
+<h3>ช่องทางการติดต่อ</h3>
+<p>อีเมล เบอร์โทร และ Social Media</p>
+<a href="contact.html">เข้าสู่หน้า</a>
+</div>
 
-    </div>
+</div>
 
 </section>
 
 <footer>
 
-    <p>
-        © 2026 Portfolio | จัดทำโดย นางสาวอธชา ไพภักดี
-    </p>
+<p>© 2026 Portfolio | จัดทำโดย นางสาวอธิชา ไพภักดี</p>
 
 </footer>
 
