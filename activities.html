@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | ผลงานและกิจกรรม</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Kanit',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* Navbar */
+
+nav{
+    background:#1e3a8a;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd54f;
+}
+
+/* Header */
+
+header{
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    color:#1e3a8a;
+    font-size:42px;
+}
+
+header p{
+    margin-top:10px;
+    color:#555;
+}
+
+/* Gallery */
+
+.container{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    padding-bottom:60px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.content{
+    padding:20px;
+}
+
+.content h2{
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+.content p{
+    line-height:1.7;
+}
+
+/* Footer */
+
+footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>My Portfolio</h2>
+
+<ul>
+<li><a href="index.html">หน้าหลัก</a></li>
+<li><a href="education.html">การศึกษา</a></li>
+<li><a href="personal.html">ประวัติส่วนตัว</a></li>
+<li><a href="activities.html">ผลงาน</a></li>
+<li><a href="contact.html">ติดต่อ</a></li>
+</ul>
+
+</nav>
+
+<header>
+
+<h1>ผลงานและกิจกรรม</h1>
+
+<p>รวบรวมผลงาน กิจกรรม และเกียรติบัตรที่ภาคภูมิใจ</p>
+
+</header>
+
+<section class="container">
+
+<div class="card">
+
+<img src="images/activity1.jpg" alt="กิจกรรมที่ 1">
+
+<div class="content">
+
+<h2>กิจกรรมจิตอาสา</h2>
+
+<p>
+เข้าร่วมกิจกรรมจิตอาสาพัฒนาชุมชน
+เพื่อส่งเสริมการทำงานร่วมกัน
+และการมีจิตสาธารณะ
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/activity2.jpg" alt="กิจกรรมที่ 2">
+
+<div class="content">
+
+<h2>การแข่งขันวิชาการ</h2>
+
+<p>
+เข้าร่วมการแข่งขันทักษะทางวิชาการ
+เพื่อพัฒนาความรู้และประสบการณ์
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/activity3.jpg" alt="กิจกรรมที่ 3">
+
+<div class="content">
+
+<h2>เกียรติบัตร</h2>
+
+<p>
+ได้รับเกียรติบัตรจากการเข้าร่วมกิจกรรม
+และการอบรมต่าง ๆ
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/activity4.jpg" alt="กิจกรรมที่ 4">
+
+<div class="content">
+
+<h2>โครงงาน</h2>
+
+<p>
+จัดทำโครงงานและนำเสนอผลงาน
+เพื่อฝึกทักษะการคิดวิเคราะห์
+และการแก้ปัญหา
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/activity5.jpg" alt="กิจกรรมที่ 5">
+
+<div class="content">
+
+<h2>กิจกรรมภายในโรงเรียน</h2>
+
+<p>
+เข้าร่วมกิจกรรมของโรงเรียน
+เพื่อพัฒนาทักษะความเป็นผู้นำ
+และการทำงานเป็นทีม
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/activity6.jpg" alt="กิจกรรมที่ 6">
+
+<div class="content">
+
+<h2>อบรมและสัมมนา</h2>
+
+<p>
+เข้าร่วมการอบรมเพื่อเพิ่มพูนความรู้
+และพัฒนาทักษะที่จำเป็น
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Portfolio | จัดทำโดย นางสาวอธิชา ไพภักดี</p>
+
+</footer>
+
+</body>
+</html>
